@@ -10,7 +10,7 @@ public class ExceptionHandlingDemo {
 
         try {
             int result = 10 / 0;
-        } catch (ArithmeticException e) {
+        } catch (ArithmeticException e) { 
             System.out.println("Division by zero not allowed.");
         }
 
