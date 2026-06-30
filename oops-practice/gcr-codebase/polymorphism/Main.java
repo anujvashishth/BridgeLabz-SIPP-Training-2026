@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 class Vehicle {
     public double fuelCost(int km) {
         return 0;
@@ -6,7 +8,7 @@ class Vehicle {
 class Car extends Vehicle {
     @Override
     public double fuelCost(int km) {
-        return km * 8;   // Rs. 8 per km
+        return km * 8;   
     }
 }
 class Bus extends Vehicle {
@@ -22,12 +24,7 @@ class Bike extends Vehicle {
     }
 }
 
-class ElectricCar extends Vehicle {
-    @Override
-    public double fuelCost(int km) {
-        return km * 2; 
-    }
-}
+
 
 // Main class
 public class Main{
@@ -37,9 +34,8 @@ public class Main{
             new Car(),
             new Bus(),
             new Bike(),
-            new ElectricCar()
+            new Elect 
         };
-
         int km = 10;
 
         for (Vehicle v : fleet) {
@@ -57,10 +53,7 @@ public class Main{
                 Bike b = (Bike) v;
                 System.out.println("This is a Bike");
             }
-            else if (v instanceof ElectricCar) {
-                ElectricCar e = (ElectricCar) v;
-                System.out.println("This is an Electric Car");
-            }
+           
 
             System.out.println();
         }
