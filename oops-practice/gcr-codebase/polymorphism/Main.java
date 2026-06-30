@@ -34,7 +34,7 @@ public class Main{
             new Car(),
             new Bus(),
             new Bike(),
-            new Elect 
+        
         };
         int km = 10;
 
