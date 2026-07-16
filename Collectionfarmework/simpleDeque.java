@@ -3,7 +3,7 @@ public class simpleDeque {
         int val;
         Node prev, next;
         Node(int val);
-        this.val = val; 
+        this.val = val;  
     }
     private Node head, tail;
     void addFirst(int x) {
